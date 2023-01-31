@@ -1,0 +1,45 @@
+html {
+    font-size: 25px;
+}
+
+body {
+    background-color: black;
+}
+
+.title {
+    text-align: center;
+}
+
+.title h1 {
+    font-size: 2rem;
+    color: white;
+    font-family: Verdana;
+    font-weight: normal;
+}
+
+.title h2 {
+    font-size: 1.68rem;
+    color: white;
+    font-family: Verdana;
+    font-weight: 300;
+}
+
+.title a {
+    color: aquamarine;
+    font-family: Verdana;
+}
+
+.title h4 {
+    font-size: 0.84rem;
+    font-family: Verdana;
+    font-weight: normal;
+    color: gray;
+}
+
+.title img {
+    display: inline-block;
+}
+
+.phone {
+    padding-top: 1rem;
+}

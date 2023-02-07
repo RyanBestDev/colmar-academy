@@ -1,45 +1,398 @@
 html {
-    font-size: 25px;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
 }
 
-body {
-    background-color: black;
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
 }
 
-.title {
-    text-align: center;
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
-.title h1 {
-    font-size: 2rem;
-    color: white;
-    font-family: Verdana;
-    font-weight: normal;
+nav div {
+    display: inline-flex;
+
 }
 
-.title h2 {
-    font-size: 1.68rem;
-    color: white;
-    font-family: Verdana;
+nav div img {
+    height: 2rem;
+    margin-left: 1.5rem;
+}
+
+nav div h3 {
+    font-size: 1rem;
+    display: inline-flex;
+    align-self: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li {
+    padding-right: 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:rgb(44, 44, 44)
+}
+
+.first-word {
+    color: rgb(54, 54, 54);
+}
+
+.second-word {
+    color: darkgray;
     font-weight: 300;
 }
 
-.title a {
-    color: aquamarine;
-    font-family: Verdana;
+.nav-end {
+    padding-right: 1.5rem !important;
 }
 
-.title h4 {
-    font-size: 0.84rem;
-    font-family: Verdana;
+
+.start-here {
+    width: 100%;
+    background-color: rgb(223, 221, 221);
+    display: flex;
+}
+
+.start-here-left {
+    width: 60%;
+}
+
+.start-here-left img {
+    width: 100%;
+    padding: 4%;
+}
+
+.start-here-right {
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-here-right h1 {
+    width: 75%;
+    font-family: Roboto;
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(94, 93, 93);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.start-here-right h3 {
+    width: 75%;
+    font-family: Roboto;
     font-weight: normal;
-    color: gray;
+    color: rgb(97, 97, 97);
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
 }
 
-.title img {
+.start-here-right button {
+    width: 75%;
+    height: 3rem;
+    background-color: rgb(44, 44, 44);
+    color: white;
+    border: 0px;
+    font-size: 1rem;
+}
+
+.start-here-right button:hover {
+    background-color: rgb(75,75,75);
+}
+
+.practicing-and-dates {
+    width: 100%;
+    display: flex;
+}
+
+.practicing {
+    width: 60%;
+    border-right: 1px solid rgb(199, 199, 199);
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.practicing h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(94, 93, 93);
+    padding-bottom: 1.5rem;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.practicing p {
+    padding-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.practicing img {
+    width: 100%;
+    padding: 4%;
+}
+
+.dates {
+    width: 40%;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.dates-div {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    padding: 2rem;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.dates-div-end {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    padding: 2rem;
+    margin-bottom: 8%;
+    background-color: rgb(179, 179, 179);
+}
+.dates img {
+    width: 35%;
+    height: auto;
+}
+
+.dates div div {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.dates div div h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    color: rgb(78, 78, 78)
+}
+
+.dates div div p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+}
+
+.dates div div a {
+    font-size: 1.5rem;
+    color: rgb(78, 78, 255);
+    text-decoration: none;
+}
+
+.start-learning {
+    background-color: rgb(223, 221, 221);
+    padding-bottom: 4%;
+}
+
+.start-learning h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(94, 93, 93);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    text-align: center;
+}
+
+.courses-container {
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.courses-container div {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.courses-container img {
+    padding-bottom: 1rem;
+    height: auto;
+}
+
+.courses-container h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: rgb(78, 78, 78)
+}
+
+.courses-container p {
+    font-size: 1.5rem;
+    color: rgb(131, 131, 131);
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+.thesis {
+    width: 100%;
+}
+
+.thesis div {
+    width: 100%;
+    display: flex;
+}
+
+.thesis h1 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: rgb(94, 93, 93);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    width: 100%;
+    text-align: center;
+}
+
+.thesis-video {
+    width: 60%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.thesis-video video {
+    max-width: 100%;
+    padding: 4%;
+    padding-top: 0%;
+}
+
+.thesis-video p {
+    padding-bottom: 8%;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+    text-align: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.thesis-info {
+    display: inline-flex;
+    flex-direction: column;
+    width: 40%
+
+}
+
+.thesis-info div {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(179, 179, 179);
+}
+
+.thesis-info div div {
+    width: 100%;
+    align-items: center;
+    display: inline-flex;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.thesis-info div img {
+    width: 35%;
+    height: auto;
+    padding: 2rem;
+}
+
+.thesis-info div div h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+    color: rgb(78, 78, 78)
+}
+
+.thesis-info div div p {
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: rgb(78, 78, 78);
+}
+
+.thesis-info-end {
+    background-color: white !important;
+}
+
+.thesis-info-end div {
+    background-color: white !important;
+}
+
+footer {
+    height: 5rem;
+    border-top: 1px solid rgb(199, 199, 199);
+}
+
+.trademark {
+    display: inline-flex;
+    height: 100%;
+    width: 35%;
+}
+
+.trademark p {
+    padding-left: 2rem;
+    align-self: center;
+}
+
+.terms-privacy {
+    padding-top: 2rem;
+    float: right;
+}
+
+.terms-privacy ul {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.terms-privacy ul li {
     display: inline-block;
+    padding-right: 2rem;
 }
 
-.phone {
-    padding-top: 1rem;
+
+/*@media only screen and (width <= 1600px) and (width > 768px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (width <= 768px) and (width > 480px) {
+    html {
+        font-size: 10px;
+    }
 }

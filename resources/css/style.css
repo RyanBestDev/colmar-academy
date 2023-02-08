@@ -384,8 +384,25 @@ footer {
     padding-right: 2rem;
 }
 
+@media only screen and (max-width: 1024px) {
+    html {
+        font-size: 12px;
+    }
+}
 
-/*@media only screen and (width <= 1600px) and (width > 768px) {
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+/*@media only screen and (max-width: 800px) {
+    header nav div {
+        display: none;
+    }
+}
+
+@media only screen and (width <= 1600px) and (width > 768px) {
     html {
         font-size: 12px;
     }
